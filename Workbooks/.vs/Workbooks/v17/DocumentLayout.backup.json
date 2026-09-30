@@ -32,10 +32,9 @@
               "RelativeDocumentMoniker": "Workbooks\\workbook7.txt",
               "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook7.txt",
               "RelativeToolTip": "Workbooks\\workbook7.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-09-29T16:48:30.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T16:48:30.281Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Workbooks\\workbook6.txt",
               "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook6.txt",
               "RelativeToolTip": "Workbooks\\workbook6.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-09-29T11:44:09.53Z"
             },
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "Workbooks\\main.cpp",
               "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\main.cpp",
               "RelativeToolTip": "Workbooks\\main.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwEoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-29T11:43:58.523Z",
               "EditorCaption": ""

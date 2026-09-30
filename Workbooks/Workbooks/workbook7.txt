@@ -21,3 +21,93 @@ void main ()
 
 Problem 2
 Q1.
+A: 10 10
+B: 25 25
+C: 99 99 99
+D: 99 99 7
+E: 99
+F: 199
+G: 3
+
+Problem 3
+Q1.
+#include <iostream>
+#include <format>
+#include <limits>
+#include <cstdint>
+
+struct CarSetup
+{
+    int frontWing;
+    int rearWing;
+    int rideHeight;
+    int tyrePressure;
+    int something;
+    float fuel;
+};
+
+int TotalDownforce(const CarSetup& setup)
+{
+    return setup.frontWing + setup.rearWing;
+}
+
+void SoftenSuspension(CarSetup& setup, float amount)
+{
+    setup.rideHeight += amount;
+}
+
+float FuelForLaps(int laps, float burnRate)
+{
+    return laps * burnRate;
+}
+
+void ApplyPitStop(const CarSetup& setup, float& fuel, float fuelTarget, int pressureChange)
+{
+    fuel = fuelTarget;
+
+    std::cout << std::format(
+        "   pit stop with front wing {}, pressure {:+}\n",
+        setup.frontWing,
+        pressureChange
+    );
+}
+
+void Problem03()
+{
+    CarSetup setup{ 12, 18, 4, 55, 22, 45.0f };
+    float fuel{ 8.0f };
+
+    std::cout << std::format(
+        "downforce: {}\n",
+        TotalDownforce(setup)
+    );
+
+    std::cout << std::format(
+        "fuel for 20 laps: {:.1f}\n",
+        FuelForLaps(20, 2.4f)
+    );
+
+    SoftenSuspension(setup, 5.0f);
+
+    std::cout << std::format(
+        "ride height: {:.1f}\n",
+        setup.rideHeight
+    );
+
+    ApplyPitStop(setup, fuel, 100.0f, 2);
+
+    std::cout << std::format(
+        "fuel after stop: {:.1f}\n",
+        fuel
+    );
+}
+
+int main()
+{
+    Problem03();
+    std::cout << "haaaaaaaaaaaaaaaa";
+}
+its bugged, i did my own version before but i couldnt tell if it worked because it kept printing problem2()
+
+Problem 4
+Q1.
