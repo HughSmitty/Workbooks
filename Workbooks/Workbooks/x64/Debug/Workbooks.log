@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\escape\workbooks\Workbooks\Workbooks\main.cpp(19,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+D:\escape\workbooks\Workbooks\Workbooks\main.cpp(25,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Workbooks.vcxproj -> D:\escape\workbooks\Workbooks\x64\Debug\Workbooks.exe

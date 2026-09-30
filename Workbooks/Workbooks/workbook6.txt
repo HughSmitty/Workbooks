@@ -1,0 +1,79 @@
+Problem 2
+Q1.
+A: 5
+B: 50
+C: 55
+D: 5
+counter 1, tally 1
+counter 1, tally 2
+counter 1, tally 3
+
+Problem 3
+Q2.
+because it hasnt changed the value of health
+Q3.
+int DrinkPotion(int health)
+{
+    health += 25;
+    std::cout << std::format("   You feel better. Health is now {}\n", health);
+	return health;
+}
+
+void Problem03()
+{
+    int playerHealth{ 40 };
+
+    std::cout << std::format("Health: {}\n", playerHealth);
+    int tempHealth = (DrinkPotion(playerHealth));
+    std::cout << std::format("Health: {}\n", tempHealth);
+}
+
+void main ()
+{
+	Problem03();
+}
+Q4.
+you can use a struct. but it would be better if the paramaters were global that way health isnt always set back to 40 when the function is called
+
+Problem 4
+Q1.
+int PercentageOf(int part, int whole)
+{
+	return (part / whole * 100);
+}
+
+void PrintStat(const char* label, int value)
+{
+	std::cout << std::format("|{:<11} |{:<5}", label, value);
+}
+
+void OVERLOAD(float value)
+{
+    std::cout << value;
+}
+
+void PrintSeperator(int width, char symbol = '_')
+{
+    for (int i = 0; i <= width, ++i;);
+    {
+        std::cout << symbol;
+    }
+    std::cout << "\n";
+}
+
+void Problem04()
+{
+    int health{ 40 };
+    int maxHealth{ 60 };
+
+    PrintSeperator(10);
+    PrintStat("M", maxHealth);
+    PrintStat("C", health);
+    PercentageOf(float(health), float(maxHealth));
+    PrintSeperator(10,'=');
+}
+
+void main ()
+{
+	Problem04();
+}
