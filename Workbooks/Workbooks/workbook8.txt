@@ -1,0 +1,103 @@
+Problem 2
+
+A: 0
+B: 5
+C: 5
+D: 10
+  inside: 105
+E: 5
+
+Problem 3
+Q1.
+celsius:    -107374176
+fahrenheit: -193273488
+then
+celsius:    -107374176
+fahrenheit: -193273488
+yes its the same
+
+Q2.
+struct Temperature
+{
+    float celsius{ 0.0f };
+
+    Temperature() = default;
+    Temperature(float celsius) : celsius(celsius) {}
+
+    float Fahrenheit() const
+    {
+        return celsius * 9.0f / 5.0f + 32.0f;
+    }
+};
+
+void Problem03()
+{
+    Temperature boiling{ 100.0f };
+    std::cout << std::format("celsius:    {}\n", boiling.celsius);
+    std::cout << std::format("fahrenheit: {}\n", boiling.Fahrenheit());
+}
+
+int main()
+{
+    Problem03();
+}
+
+Problem 4
+Q1.
+struct Fraction
+{
+    int numerator{ 0 };
+    int denominator{ 1 };           // NOT 0
+
+    Fraction() = default;
+    Fraction(int numerator, int denominator)
+        : numerator(numerator), denominator(denominator)
+    {
+    }
+
+    float AsDecimal() const
+    {
+        return static_cast<float>(numerator) / denominator;
+    }
+
+    Fraction operator*(const Fraction& rhs) const
+    {
+        return { numerator * rhs.numerator, denominator * rhs.denominator };
+    }
+
+    bool operator==(const Fraction& rhs) const
+    {
+        return numerator * rhs.denominator == rhs.numerator * denominator;
+    }
+
+    void Print() const
+    {
+        std::cout << std::format("{}/{} ({:.3f})\n", numerator, denominator, AsDecimal());
+    }
+};
+
+void Problem04()
+{
+    Fraction threeQuarters{ 3, 4 };
+    Fraction twoThirds{ 2, 3 };
+    Fraction sixTwelfths{ 6, 12 };
+    Fraction oneHalf{ 1, 2 };
+
+    threeQuarters.Print();                              // 3/4 (0.750)
+    twoThirds.Print();                                  // 2/3 (0.667)
+
+    Fraction product{ threeQuarters * twoThirds };
+    product.Print();                                    // 6/12 (0.500)
+
+    std::cout << std::format("6/12 == 1/2 ? {}\n", sixTwelfths == oneHalf);
+}
+
+int main()
+{
+    Problem04();
+} 
+i didnt understand the wording at all, yes i do pay attention
+
+Problem 5
+Q1.
+what?

@@ -111,3 +111,79 @@ its bugged, i did my own version before but i couldnt tell if it worked because 
 
 Problem 4
 Q1.
+because they are not global paramaters
+or because it was only making a copy and not using the actual parameter
+Q2.
+void Swap(int& first, int& second)
+{
+    int temporary{ first };
+    first = second;
+    second = temporary;
+}
+
+int& Fastest(int lapA, int lapB)
+{
+    if (lapA < lapB)
+    {
+        return lapA;
+    }
+
+    return lapB;
+}
+
+void Problem04()
+{
+    int driverOne{ 84 };
+    int driverTwo{ 91 };
+
+    Swap(driverOne, driverTwo);
+    std::cout << std::format("after swap: {} {}\n", driverOne, driverTwo);
+
+    int& best{ Fastest(driverOne, driverTwo) };
+    std::cout << std::format("best lap: {}\n", best);
+}
+
+int main()
+{
+    Problem04();
+}
+Q3.
+best lap: -1049856 im not getting an error or anything in log
+
+Q4.
+i deleted the & 
+int(& was here) best{ Fastest(driverOne, driverTwo) };
+
+
+Problem 5
+Q1.
+IDK
+i looked at the answer i get it but not really
+
+Problem 6
+Q1.
+A lap time, in seconds, that the function only reads.
+const&
+A CarSetup that the function only reads.
+const&
+A CarSetup that the function adjusts.
+&
+A lap counter that the function increments.
+&
+A single character representing a tyre compound, only read.
+const&
+A CarSetup that the function copies, modifies locally, and returns as a new setup.
+by value
+A bool saying whether it is raining, only read.
+const&
+
+Stretch
+Q2.
+'frontWing' cannot be modified because it is being accessed through a const object
+Q3.
+no and it didnt
+Q4.
+?
+Q5.
+"say what habit"?
+oh thats a wierd question

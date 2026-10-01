@@ -3,74 +3,38 @@
 #include <limits>
 #include <cstdint>
 
-struct CarSetup
+
+class FuelTank
 {
-    int frontWing;
-    int rearWing;
-    int rideHeight;
-    int tyrePressure;
-    int something;
-    float fuel;
+public:
+    FuelTank() = default;
+
+    FuelTank(float capacityLitres)
+        : currentLitres(capacityLitres), capacityLitres(capacityLitres)
+    {
+    }
+
+    float currentLitres{ 0.0f };
+    float capacityLitres{ 0.0f };
 };
 
-int TotalDownforce(const CarSetup& setup)
+void Problem05()
 {
-    return setup.frontWing + setup.rearWing;
-}
+    FuelTank tank;
+    tank.capacityLitres = 60.0f;
+    tank.currentLitres = 45.0f;
 
-void SoftenSuspension(CarSetup& setup, float amount)
-{
-    setup.rideHeight += amount;
-}
+    std::cout << std::format("{:.1f} / {:.1f}\n", tank.currentLitres, tank.capacityLitres);
 
-float FuelForLaps(int laps, float burnRate)
-{
-    return laps * burnRate;
-}
+    tank.currentLitres = 500.0f;        // nothing stops this
+    tank.capacityLitres = -12.0f;       // or this
+    tank.currentLitres = 45.0f;
+    tank.capacityLitres = 20.0f;        // or this — capacity now below current
 
-void ApplyPitStop(const CarSetup& setup, float& fuel, float fuelTarget, int pressureChange)
-{
-    fuel = fuelTarget;
-
-    std::cout << std::format(
-        "   pit stop with front wing {}, pressure {:+}\n",
-        setup.frontWing,
-        pressureChange
-    );
-}
-
-void Problem03()
-{
-    CarSetup setup{ 12, 18, 4, 55, 22, 45.0f };
-    float fuel{ 8.0f };
-
-    std::cout << std::format(
-        "downforce: {}\n",
-        TotalDownforce(setup)
-    );
-
-    std::cout << std::format(
-        "fuel for 20 laps: {:.1f}\n",
-        FuelForLaps(20, 2.4f)
-    );
-
-    SoftenSuspension(setup, 5.0f);
-
-    std::cout << std::format(
-        "ride height: {:.1f}\n",
-        setup.rideHeight
-    );
-
-    ApplyPitStop(setup, fuel, 100.0f, 2);
-
-    std::cout << std::format(
-        "fuel after stop: {:.1f}\n",
-        fuel
-    );
+    std::cout << std::format("{:.1f} / {:.1f}\n", tank.currentLitres, tank.capacityLitres);
 }
 
 int main()
 {
-    Problem03();
-    std::cout << "haaaaaaaaaaaaaaaa";
+    Problem05();
 }

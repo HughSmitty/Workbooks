@@ -22,5 +22,6 @@
   <ItemGroup>
     <Text Include="workbook6.txt" />
     <Text Include="workbook7.txt" />
+    <Text Include="workbook8.txt" />
   </ItemGroup>
 </Project>

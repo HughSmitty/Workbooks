@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\escape\\workbooks\\Workbooks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook8.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|solutionrelative:Workbooks\\workbook8.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|D:\\escape\\workbooks\\Workbooks\\Workbooks\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|solutionrelative:Workbooks\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook7.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|solutionrelative:Workbooks\\workbook7.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook6.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|solutionrelative:Workbooks\\workbook6.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|D:\\escape\\workbooks\\Workbooks\\Workbooks\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{34508983-DCAD-4410-B027-1314B021427B}|Workbooks\\Workbooks.vcxproj|solutionrelative:Workbooks\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,19 +31,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "workbook8.txt",
+              "DocumentMoniker": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook8.txt",
+              "RelativeDocumentMoniker": "Workbooks\\workbook8.txt",
+              "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook8.txt",
+              "RelativeToolTip": "Workbooks\\workbook8.txt",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAUwEUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-10-01T11:28:16.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "workbook7.txt",
               "DocumentMoniker": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook7.txt",
               "RelativeDocumentMoniker": "Workbooks\\workbook7.txt",
               "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook7.txt",
               "RelativeToolTip": "Workbooks\\workbook7.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-09-29T16:48:30.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T16:48:30.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "workbook6.txt",
               "DocumentMoniker": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\workbook6.txt",
               "RelativeDocumentMoniker": "Workbooks\\workbook6.txt",
@@ -47,18 +63,17 @@
               "RelativeToolTip": "Workbooks\\workbook6.txt",
               "ViewState": "AgIAACEAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-09-29T11:44:09.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T11:44:09.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\main.cpp",
               "RelativeDocumentMoniker": "Workbooks\\main.cpp",
               "ToolTip": "D:\\escape\\workbooks\\Workbooks\\Workbooks\\main.cpp",
               "RelativeToolTip": "Workbooks\\main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwEoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-29T11:43:58.523Z",
               "EditorCaption": ""
